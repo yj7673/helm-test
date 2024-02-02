@@ -1,0 +1,16 @@
+app: 
+  name: myapp
+
+pod:
+  image: nginx
+
+service:
+  name: my-svc
+  port: 80
+  protocol: TCP
+  type: NodePort
+
+ingress:
+  name: my-ingress
+  type: ip
+  scheme: internet-facing
